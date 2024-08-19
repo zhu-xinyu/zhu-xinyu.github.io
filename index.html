@@ -143,6 +143,14 @@
             margin: 0;
             font-size: 0.9rem;
         }
+
+        #profile-photo {
+            width: 600px; /* 设置图片宽度 */
+            height: auto; /* 高度自动调整，保持比例 */
+            border-radius: 8px; /* 圆角 */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* 添加阴影效果 */
+        }
+
     </style>
 </head>
 
@@ -162,7 +170,7 @@
     <main>
         <section id="academics">
             <h2>Academics</h2>
-            <img src="picture/IMG_9923.jpg" alt="Personal Photo">
+            <img id="profile-photo" src="picture/IMG_9923.jpg" alt="Personal Photo">
             <h3>Research Interests</h3>
             <ul>
                 <li>Generative Syntax: adverb syntax; Chinese dialects syntax (esp. Wu Chinese)</li>
