@@ -18,7 +18,7 @@
         }
 
         header {
-            background-color: #304252;
+            background-color: #2c3e50;
             color: white;
             padding: 2rem 0;
             text-align: center;
@@ -48,12 +48,9 @@
             font-size: 1rem;
         }
 
-        nav a:hover {
-            text-decoration: underline;
-        }
-
         main {
             display: flex;
+            flex-direction: row;
             max-width: 1200px;
             margin: 20px auto;
             padding: 20px;
@@ -89,19 +86,23 @@
             margin-bottom: 0.5rem;
         }
 
-        img {
+        img, table {
             display: block;
             margin: 20px 0;
             max-width: 100%;
+            height: auto;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
         }
 
-        p, ul, ol {
+        p,
+        ul,
+        ol {
             margin-bottom: 1rem;
         }
 
-        ul, ol {
+        ul,
+        ol {
             padding-left: 20px;
         }
 
@@ -111,7 +112,8 @@
             margin-bottom: 1.5rem;
         }
 
-        table td, table th {
+        table td,
+        table th {
             padding: 10px;
             border-bottom: 1px solid #ddd;
         }
@@ -151,6 +153,31 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* 添加阴影效果 */
         }
 
+        /* Media Queries for responsiveness */
+        @media (max-width: 768px) {
+            main {
+                flex-direction: column;
+                padding: 10px;
+            }
+
+            nav a {
+                display: block;
+                margin: 10px 0;
+                text-align: center;
+            }
+
+            header h1 {
+                font-size: 2rem;
+            }
+
+            header p {
+                font-size: 1rem;
+            }
+
+            aside {
+                margin-top: 20px;
+            }
+        }
     </style>
 </head>
 
@@ -163,7 +190,6 @@
             <a href="#publications">Publications</a>
             <a href="#presentations">Presentations</a>
             <a href="#external-links">External Links</a>
-            <a href="#contact">Contact</a>
         </nav>
     </header>
 
@@ -228,9 +254,9 @@
             <h2>Publications</h2>
             <h3>Journal Articles</h3>
             <ul>
-                <li>朱鑫雨. (2023). 从VP壳假说看绍兴吴语的“V快”结构. <i>海外英语</i>(08),68-71.</li>
-                <li>朱鑫雨. (2022). 关键期假说在二语句法习得中的差异化效应——以形态句法及否定习得为例. <i>语言与文化研究</i>(03),29-36.</li>
-                <li>朱鑫雨. (2022). 浅谈生成语法框架下的句法推导——从语义理论到特征核查. <i>现代语言学</i>10(7),1418-1422.</li>
+                <li>朱鑫雨. (2023). 从VP壳假说看绍兴吴语的“V快”结构. <i>海外英语</i>(08),68-71. doi:CNKI:SUN:HWYY.0.2023-08-021.</li>
+                <li>朱鑫雨. (2022). 关键期假说在二语句法习得中的差异化效应——以形态句法及否定习得为例. <i>语言与文化研究</i>(03),29-36. doi:10.19954/j.cnki.lcr.2022.03.025.</li>
+                <li>朱鑫雨. (2022). 浅谈生成语法框架下的句法推导——从语义理论到特征核查. <i>现代语言学</i>10(7),1418-1422. https://doi.org/10.12677/ML.2022.107189.</li>
             </ul>
 
             <h3>Conference Proceedings</h3>
@@ -274,6 +300,7 @@
                 <li>A'-movement <a href="https://www.bilibili.com/video/BV1gQ4y1H7Fq/?spm_id_from=333.999.0.0" target="_blank">[Link]</a></li>
                 <li>Bounding Theory <a href="https://www.bilibili.com/video/BV1u94y1g72X/?spm_id_from=333.999.0.0" target="_blank">[Link]</a></li>
                 <li>Binding Theory <a href="https://www.bilibili.com/video/BV1pT4y1H7Qa/?spm_id_from=333.999.0.0" target="_blank">[Link]</a></li>
+                <li>Distributed Morphology <a href="https://www.bilibili.com/video/BV11S411P7xa/?spm_id_from=333.999.list.card_archive.click&vd_source=e331a10aebf38deb0cf6c89513e4974b" target="_blank">[Link]</a></li>
                 <p>More to come!</p>
             </ul>
         </section>
@@ -281,7 +308,7 @@
 
     <footer>
         <p>© 2023 - 2024 Xinyu Zhu | 朱鑫雨</p>
-        <p>Updated 19.08.2024</p>
+        <p>Updated 30.05.2024</p>
     </footer>
 </body>
 
